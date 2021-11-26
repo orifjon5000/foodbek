@@ -41,7 +41,7 @@ export const Wrapper = styled.div`
 export const LogoTitle = styled.div`
   display: flex;
   flex-direction: column;
-  width: 100%;
+  /* width: 100%; */
   h2 {
     position: absolute;
     width: 74px;

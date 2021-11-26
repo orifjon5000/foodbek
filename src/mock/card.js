@@ -7,7 +7,7 @@ export const card = {
       time: new Date(),
       total: '40000',
       user: {
-        name: 'Gulbashakar Gulshakar',
+        name: 'GAli Valiyev',
         phone: 12345678,
       },
       operator: {
@@ -45,7 +45,7 @@ export const card = {
       time: new Date(),
       total: '40000',
       user: {
-        name: 'Gulbashakar Joe',
+        name: 'Kamol Joe',
         phone: 8765432,
       },
       operator: {
@@ -66,7 +66,7 @@ export const card = {
       time: new Date(),
       total: '40000',
       user: {
-        name: 'Gulbashakar Gulshakar',
+        name: 'Ikrom ',
         phone: 12345678,
       },
       operator: {

@@ -1,17 +1,69 @@
 import React from "react";
-import { Container, Wrapper, Info } from "./style";
 import { card } from "../../mock/card";
+import save from "../../assets/icons/save.svg";
+import done from "../../assets/icons/done.svg";
+import cancel from "../../assets/icons/cancel.svg";
+import clock from "../../assets/icons/clock.svg";
+import user from "../../assets/icons/user.svg";
+import plus from "../../assets/icons/plus.svg";
+import { Container, Wrapper, Info, Title, Order, User, Payme,Save } from "./style";
+
 export const Buyurtmalar = () => {
   console.log(Object.entries(card));
   return (
     <Container>
       <h1>navbar</h1>
       <Wrapper>
-        {Object.entries(card).map(([name,data])=>(
+        {Object.entries(card).map(([name, data]) => (
           <Wrapper.column>
-            {data.map((value)=>
-            <Info></Info>
-            )}
+            <Title>{name}</Title>
+            <div></div>
+            {data.map((value) => (
+              <Info>
+                <Order>
+                  <p>
+                    <span>{value.orderId}</span>
+                    <img src={save} alt="dsave" />
+                  </p>
+                  <p>
+                    <img src={clock} alt="clock" /> 00:24
+                  </p>
+                </Order>
+                <User>
+                  <block>
+                    <img src={user} alt="user" /> {value.user.name}
+                  </block>
+                  <span>{value.user.phone}</span>
+                </User>
+                <Payme>
+                  <p>
+                    Umumiy summa:
+                    <br /><i>{value.total}</i>
+                  </p>
+                  <pi>
+                    <span></span> Payme
+                  </pi>
+                </Payme>
+                <Save>
+                  <div>
+                    <p> <span>operator:</span> {value.operator.name}</p>{" "}
+                    <button>
+                      <img src={cancel} alt="" />{" "}
+                    </button>
+                  </div>
+                  <div>
+                    <p>
+                      {value.filial.title}
+                      {value.filial.location}
+                    </p>{" "}
+                    <button>
+                      <img src={done} alt="" />
+                    </button>
+                  </div>
+                </Save>
+
+              </Info>
+            ))}
           </Wrapper.column>
         ))}
         {/* <Wrapper.column>Yangi </Wrapper.column>
