@@ -1,12 +1,6 @@
 import React from "react";
 import { Container } from "./style";
-import {
-  BrowserRouter,
-  Route,
-  Routes,
-  Switch,
-  NavLink,
-} from "react-router-dom";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { sidebar } from "../utils/sidebar";
 import Sidebar from "../component/Sidebar/Index";
 

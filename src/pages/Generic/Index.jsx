@@ -6,7 +6,7 @@ export const Generic = () => {
   const location = useLocation();
   return (
     <Container>
-      <h1>{location.pathname} sws</h1>
+      <h1>{location.pathname} coming son</h1>
     </Container>
   );
 };
