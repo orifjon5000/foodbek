@@ -1,13 +1,13 @@
 import React from "react";
-import Buyurtma from "../../component/Buyurtmalar/Index";
+import Buyurtmalar from "../../component/Buyurtmalar/Index";
 import { Container } from "./style";
 
-export const Buyurtmalar = () => {
+export const Buyurtma = () => {
   return (
     <Container>
-      <Buyurtma />
+      <Buyurtmalar />
     </Container>
   );
 };
 
-export default Buyurtmalar;
+export default Buyurtma;

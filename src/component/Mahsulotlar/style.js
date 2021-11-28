@@ -5,11 +5,12 @@ export const Container = styled.div`
   width: 100%;
   flex-direction: column;
   background: #e5e5e5;
-  padding: 20px 30px;
+  /* padding: 20px 30px; */
 `;
 
 export const Wrapper = styled.div`
   display: flex;
+  flex-direction: column;
   flex: 1;
 `;
 Wrapper.column = styled.div`
@@ -19,27 +20,26 @@ Wrapper.column = styled.div`
   height: 100vh;
 `;
 
-export const Info = styled.h1`
+export const Info = styled.div`
   display: flex;
-  flex-direction: column;
-  margin-bottom: 10px;
-  margin-right: 15px;
+  flex: 1;
+  justify-content: flex-start;
+  margin: 20px;
   background: white;
   box-shadow: 0px 20px 25px rgba(176, 177, 181, 0.432802);
   border-radius: 6px;
-  height: 335px;
-`;
-
-export const Title = styled.div`
-  padding-bottom: 10px;
-  text-transform: capitalize;
+  height: fit-content;
+  width: 60rem;
 `;
 
 export const Order = styled.div`
   display: flex;
-  justify-content: space-around;
-  margin: 10px 0 10px 0;
-  border-radius: 8px;
+  flex-direction: column;
+  /* justify-content: space-around; */
+  padding: 10px 40px;
+  width: 250px;
+  border-right: 1px solid rgba(0, 0, 0, 0.1);
+
   p {
     display: flex;
     align-items: center;
@@ -47,10 +47,14 @@ export const Order = styled.div`
     line-height: 16px;
     color: #2d3a45;
   }
+
   img {
     margin-right: 14px;
-    margin-left: 14px;
+    margin-left: 30px;
     border: none;
+  }
+  pi {
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
   }
   span {
     border-radius: 18px;
@@ -66,6 +70,8 @@ export const Order = styled.div`
 
 export const User = styled.div`
   display: flex;
+  border-right: 1px solid rgba(0, 0, 0, 0.1);
+  width: 250px;
   flex-direction: column;
   align-items: center;
   border-top: 1px solid rgba(0, 0, 0, 0.1);
@@ -77,7 +83,7 @@ export const User = styled.div`
   }
   block {
     display: flex;
-    justify-content: space-evenly;
+    /* justify-content: space-evenly; */
     font-size: 16px;
     line-height: 20px;
     letter-spacing: 0.533333px;
@@ -92,9 +98,12 @@ export const User = styled.div`
 `;
 
 export const Payme = styled.div`
+  flex-direction: column;
   display: flex;
-  justify-content: space-around;
+  /* justify-content: space-around; */
+  width: 250px;
   font-size: 11px;
+  border-right: 1px solid rgba(0, 0, 0, 0.1);
   line-height: 18px;
   letter-spacing: 0.366667px;
   color: #8d9ba8;
@@ -102,10 +111,7 @@ export const Payme = styled.div`
   i {
     font-size: 20px;
     line-height: 18px;
-    /* identical to box height, or 90% */
-
     letter-spacing: 0.666667px;
-
     color: #2d3a45;
   }
 
@@ -119,16 +125,17 @@ export const Payme = styled.div`
 
 export const Save = styled.div`
   display: flex;
+  width: 250px;
   flex-direction: column;
   font-size: 14px;
   gap: 10px;
   div {
     display: flex;
-    justify-content: space-between;
     align-items: center;
     margin: 10px 15px;
     span {
       opacity: 0.5;
+      border-right: 1px solid rgba(0, 0, 0, 0.1);
       font-weight: 300;
     }
   }
@@ -140,4 +147,60 @@ export const Save = styled.div`
     box-shadow: 0 0 0 4px rgb(240 240 240 / 82%);
   }
 `;
+
+export const Navbar = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 30px;
+  height: 100px;
+  background: white;
+`;
+
+Navbar.Container = styled.div`
+  display: flex;
+  align-items: center;
+  background: rgba(237, 239, 243, 1);
+  width: 700px;
+  height: 45px;
+  border-radius: 22px;
+  padding: 20px 10px; ;
+`;
+
+Navbar.Item = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 36px;
+  width: 162px;
+  margin-right: 20px;
+  background: ${({ isActive }) => isActive && "white"};
+  box-shadow: ${({ isActive }) => isActive && "rgba(174, 176, 181, 0.314986)"};
+  border-radius: 18px;
+  cursor: pointer;
+  transition: 0.3s all ease;
+`;
+
+export const Menu = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 97px;
+  height: 48px;
+  background: #edeff3;
+  border-radius: 24px;
+  padding-left: 27px;
+  margin-left: 20px;
+`;
+
+Menu.V = styled.div`
+  width: 40px;
+  cursor: pointer;
+`;
+Menu.H = styled.div`
+  cursor: pointer;
+  width: 40px;
+`;
+// export const Payme= styled.div``;
+
 // export const Payme= styled.div``;

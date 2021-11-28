@@ -8,7 +8,7 @@ export const card = {
       total: '40000',
       user: {
         name: 'GAli Valiyev',
-        phone: 12345678,
+        phone: '+998()9415000',
       },
       operator: {
         name: 'Komilova A',
@@ -27,7 +27,7 @@ export const card = {
       total: '40000',
       user: {
         name: 'Gulbashakar Joe',
-        phone: 8765432,
+        phone: '+998()9415000',
       },
       operator: {
         name: 'Komilova B',
@@ -37,25 +37,7 @@ export const card = {
         location: 'Maksim Gorkiy',
       },
     },
-    {
-      id: 3,
-      categoria: 'yangi',
-
-      orderId: 56789,
-      time: new Date(),
-      total: '40000',
-      user: {
-        name: 'Kamol Joe',
-        phone: 8765432,
-      },
-      operator: {
-        name: 'Komilova B',
-      },
-      filial: {
-        title: 'KFC',
-        location: 'Maksim Gorkiy',
-      },
-    },
+    
   ],
   qabul: [
     {
@@ -67,7 +49,7 @@ export const card = {
       total: '40000',
       user: {
         name: 'Ikrom ',
-        phone: 12345678,
+        phone: '+998()9415000',
       },
       operator: {
         name: 'Komilova A',
@@ -86,7 +68,7 @@ export const card = {
       total: '40000',
       user: {
         name: 'Gulbashakar Joe',
-        phone: 8765432,
+        phone: '+998()9415000',
       },
       operator: {
         name: 'Komilova B',
@@ -107,7 +89,7 @@ export const card = {
       total: '40000',
       user: {
         name: 'Gulbashakar Gulshakar',
-        phone: 12345678,
+        phone: '+998()9415000',
       },
       operator: {
         name: 'Komilova A',
@@ -128,7 +110,7 @@ export const card = {
       total: '40000',
       user: {
         name: 'Gulbashakar Gulshakar',
-        phone: 12345678,
+        phone: '+998()9415000',
       },
       operator: {
         name: 'Komilova A',
@@ -147,7 +129,7 @@ export const card = {
       total: '40000',
       user: {
         name: 'Gulbashakar Joe',
-        phone: 8765432,
+        phone: '+998()9415000',
       },
       operator: {
         name: 'Komilova B',

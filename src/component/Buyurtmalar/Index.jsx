@@ -1,4 +1,4 @@
-import React from "react";
+import React ,{useState}from "react";
 import { card } from "../../mock/card";
 import save from "../../assets/icons/save.svg";
 import done from "../../assets/icons/done.svg";
@@ -8,16 +8,16 @@ import user from "../../assets/icons/user.svg";
 import plus from "../../assets/icons/plus.svg";
 import { Container, Wrapper, Info, Title, Order, User, Payme,Save } from "./style";
 
-export const Buyurtmalar = () => {
-  console.log(Object.entries(card));
+export const Buyurtmalar = (props) => {
+  const [products, setProducts]=useState('yangi')
+  let name ='yangi'
+  console.log(card[name]);
   return (
     <Container>
-      <h1>navbar</h1>
       <Wrapper>
         {Object.entries(card).map(([name, data]) => (
           <Wrapper.column>
             <Title>{name}</Title>
-            <div></div>
             {data.map((value) => (
               <Info>
                 <Order>
@@ -57,7 +57,7 @@ export const Buyurtmalar = () => {
                       {value.filial.location}
                     </p>{" "}
                     <button>
-                      <img src={done} alt="" />
+                      <img  style={{width:'12px'}}src={done} alt="" />
                     </button>
                   </div>
                 </Save>
