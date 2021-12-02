@@ -28,6 +28,7 @@ export const Info = styled.h1`
   box-shadow: 0px 20px 25px rgba(176, 177, 181, 0.432802);
   border-radius: 6px;
   height: 335px;
+  /* width: 60rem; */
 `;
 
 export const Title = styled.div`
@@ -140,85 +141,4 @@ export const Save = styled.div`
     box-shadow: 0 0 0 4px rgb(240 240 240 / 82%);
   }
 `;
-export const Navbar = styled.div`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 20px 30px;
-  height: 100px;
-  background: white;
-`;
-
-Navbar.Container = styled.div`
-  display: flex;
-  align-items: center;
-  background: rgba(237, 239, 243, 1);
-  width: 700px;
-  height: 45px;
-  border-radius: 22px;
-  margin-right: 80px;
-  padding: 20px 10px; ;
-  opacity: ${({isActive})=> isActive ? 1 : .3};
-  cursor: ${({isActive})=> isActive? 'pointer':'not-allowed'}   
-`;
-
-Navbar.Item = styled.div`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 36px;
-  width: 162px;
-  margin-right: 20px;
-  background: ${({ isActive }) => isActive && "white"};
-  box-shadow: ${({ isActive }) => isActive && "rgba(174, 176, 181, 0.314986)"};
-  border-radius: 18px;
-  cursor: inherit;
-  transition: 0.3s all ease;
-`;
-
-export const Menu = styled.div`
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 70px;
-  height: 35px;
-  background: #edeff3;
-  border-radius: 24px;
-  margin-left: 20px;
-`;
-
-Menu.V = styled.div`
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 8px;
-  margin-left: 3px;
-  margin-right: 5px;
-  width: 40px;
-  background: ${({ isactive }) => isactive && "white"};
-  border-radius: 50%;
-  cursor: pointer;
-  img {
-    fill: ${({ isactive }) => isactive && "#8d9ba8"}
-  }
-`;
-Menu.H = styled.div`
-  cursor: pointer;
-  width: 40px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 8px;
-  /* margin-left: 3px; */
-  margin-right: 5px;
-  width: 40px;
-  background: ${({ isactive }) => isactive && "white"};
-  fill: #8d9ba8;
-  path & {
-    fill:  ${({ isactive }) => isactive && "#8d9ba8"};
-  }
-  border-radius: 50%;
-  cursor: pointer;
-`;
-
 // export const Payme= styled.div``;

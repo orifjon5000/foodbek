@@ -148,71 +148,7 @@ export const Save = styled.div`
   }
 `;
 
-export const Navbar = styled.div`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 20px 30px;
-  height: 100px;
-  background: white;
-`;
 
-Navbar.Container = styled.div`
-  display: flex;
-  align-items: center;
-  background: rgba(237, 239, 243, 1);
-  width: 700px;
-  height: 45px;
-  border-radius: 22px;
-  padding: 20px 10px; ;
-`;
 
-Navbar.plus = styled.div`
-  background: green;
-`;
-
-Navbar.link = styled.div`
-  display: flex;
-`;
-
-Navbar.input = styled.div``;
-Navbar.tools = styled.div``;
-export const Menu = styled.div`
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 70px;
-  height: 35px;
-  background: #edeff3;
-  border-radius: 24px;
-  margin-left: 20px;
-`;
-
-Menu.V = styled.div`
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 8px;
-  margin-left: 3px;
-  margin-right: 5px;
-  width: 40px;
-  background: ${({ Active }) => Active && "white"};
-  border-radius: 50%;
-  cursor: pointer;
-`;
-Menu.H = styled.div`
-  cursor: pointer;
-  width: 40px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 8px;
-  /* margin-left: 3px; */
-  margin-right: 5px;
-  width: 40px;
-  background: ${({ Active }) => Active && "white"};
-  border-radius: 50%;
-  cursor: pointer;
-`;
 
 // export const Payme= styled.div``;

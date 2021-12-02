@@ -4,9 +4,9 @@ export const Container = styled.div`
   /* margin:0;   */
   display: flex;
   flex-direction: column;
-  width: 300px;
+  width: 340px;
   background: white;
-  height: 100vh;
+  height: 800px;
   .icon {
     width: 40px;
     height: 40px;
