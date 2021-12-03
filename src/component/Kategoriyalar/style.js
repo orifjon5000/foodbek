@@ -167,16 +167,16 @@ Navbar.Container = styled.div`
   padding: 20px 10px; ;
 `;
 
-Navbar.plus = styled.div`
+Navbar.Plus = styled.div`
   background: green;
 `;
 
-Navbar.link = styled.div`
+Navbar.Link = styled.div`
   display: flex;
 `;
 
-Navbar.input = styled.div``;
-Navbar.tools = styled.div``;
+Navbar.Input = styled.div``;
+Navbar.Tools = styled.div``;
 export const Menu = styled.div`
   display: flex;
   align-items: center;

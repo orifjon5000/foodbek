@@ -1,14 +1,14 @@
 import React, { useState } from "react";
-import { card } from "../../mock/card";
+// import { card } from "../../mock/card";
 
 import menuV from "../../assets/icons/menuV.svg";
 import menuH from "../../assets/icons/menuH.svg";
-import { Container, Wrapper, Navbar, Menu } from "./style";
+import { Container,  Navbar, Menu } from "./style";
 
 import Flex from "./Flex/Index";
 import Grid from "./Grid/Index";
 
-export const Buyurtmalar = (props) => {
+export const Buyurtmalar = () => {
   const [isActive, setisActiVe] = useState("yangi");
   const [isGrid, setGrid] = useState("yangi");
   const onChange= (title)=>{isGrid && setisActiVe(title)}

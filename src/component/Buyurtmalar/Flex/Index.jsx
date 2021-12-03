@@ -1,11 +1,11 @@
-import React, { useState } from "react";
+import React from "react";
 import { card } from "../../../mock/card";
 import save from "../../../assets/icons/save.svg";
 import done from "../../../assets/icons/done.svg";
 import cancel from "../../../assets/icons/cancel.svg";
 import clock from "../../../assets/icons/clock.svg";
 import user from "../../../assets/icons/user.svg";
-import plus from "../../../assets/icons/plus.svg";
+
 import {
   Container,
   Wrapper,
@@ -18,14 +18,13 @@ import {
 } from "./style";
 
 export const Flex = (props) => {
-  const [products, setProducts] = useState("yangi");
   let name = "yangi";
   console.log(card[name]);
   return (
     <Container>
       <Wrapper>
         {Object.entries(card).map(([name, data]) => (
-          <Wrapper.column>
+          <Wrapper.Column>
             <Title>{name}</Title>
             {data.map((value) => (
               <Info>
@@ -76,12 +75,8 @@ export const Flex = (props) => {
                 </Save>
               </Info>
             ))}
-          </Wrapper.column>
+          </Wrapper.Column>
         ))}
-        {/* <Wrapper.column>Yangi </Wrapper.column>
-        <Wrapper.column>Qabul qilingan</Wrapper.column>
-        <Wrapper.column>Jo'natilgan</Wrapper.column>
-        <Wrapper.column>Yopilgan</Wrapper.column> */}
       </Wrapper>
     </Container>
   );

@@ -11,26 +11,72 @@ export const Container = styled.div`
 export const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
+  border-radius: 8px;
   flex: 1;
+  box-shadow: 0px 2px 2px rgba(174, 176, 181, 0.314986);
+  border-radius: 6px;
+  width: 992px;
+  /* height: 60px; */
 `;
-Wrapper.column = styled.div`
-  display: flex;
-  flex-direction: column;
-  flex: 1;
-  height: 100vh;
-`;
+Wrapper.Column = styled.div``;
 
 export const Info = styled.div`
   display: flex;
   flex: 1;
+  align-items: center;
   justify-content: flex-start;
-  margin: 20px;
+  margin: 7px 20px;
   background: white;
   box-shadow: 0px 20px 25px rgba(176, 177, 181, 0.432802);
   border-radius: 6px;
   height: fit-content;
   width: 60rem;
+  img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin: 10px 30px 10px 20px;
+  }
+  h3 {
+    width: 65px;
+    display: flex;
+    flex: 1;
+    font-size: 13px;
+    line-height: 15px;
+    font-weight: 500;
+    text-transform: capitalize;
+    color: #2d3a45;
+  }
+  action  {
+    border: 3px solid #edeff3;
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+    padding: 10px;
+    opacity: 0.8;
+    cursor: pointer;
+    
+  }
+  delete  {
+    border: 3px solid #edeff3;
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+    padding: 10px;
+    opacity: 0.8;
+    cursor: pointer;
+    margin-right: 85px;
+    margin-left: 25px;
+  }
+
 `;
+
 
 export const Order = styled.div`
   display: flex;
@@ -167,16 +213,34 @@ Navbar.Container = styled.div`
   padding: 20px 10px; ;
 `;
 
-Navbar.plus = styled.div`
+Navbar.Plus = styled.div`
   background: green;
 `;
 
-Navbar.link = styled.div`
+Navbar.Link = styled.div`
   display: flex;
+  /* align-items: center; */
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  height: 36px;
+  background: white;
+`;
+Navbar.Links = styled.div`
+  align-items: center;
+  display: flex;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 13px;
+  text-transform: uppercase;
+  flex: 1;
+  padding-left: 20px;
+  border-left: 2px solid rgba(0, 0, 0, 0.2);
+  color: #2d3a45;
 `;
 
-Navbar.input = styled.div``;
-Navbar.tools = styled.div``;
+Navbar.Input = styled.div``;
+Navbar.Tools = styled.div``;
 export const Menu = styled.div`
   display: flex;
   align-items: center;

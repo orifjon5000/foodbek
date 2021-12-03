@@ -5,22 +5,20 @@ import done from "../../../assets/icons/done.svg";
 import cancel from "../../../assets/icons/cancel.svg";
 import clock from "../../../assets/icons/clock.svg";
 import user from "../../../assets/icons/user.svg";
-import plus from "../../../assets/icons/plus.svg";
+
 import {
   Container,
   Wrapper,
   Info,
-  Navbar,
   Order,
   User,
   Payme,
   Save,
-  Menu,
 } from "./style";
-import Buyurtmalar from "../Index";
+// import Buyurtmalar from "../Index";
 
 export const Mahsulotlar = ({isActive}) => {
-  const [products, setProducts] = useState(Object.entries(card));
+  const [products, ] = useState(Object.entries(card));
   // const [isActive, setisActice] = useState("yangi");
 
   console.log(Object.entries(card));
