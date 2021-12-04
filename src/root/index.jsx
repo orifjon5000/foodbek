@@ -1,9 +1,9 @@
 import React from "react";
 import { Container } from "./style";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Buyurtmalar from "../component/Buyurtmalar/Index";
 import { sidebar } from "../utils/sidebar";
 import Sidebar from "../component/Sidebar/Index";
-
 
 export const Root = () => {
   return (
@@ -14,7 +14,8 @@ export const Root = () => {
           {sidebar.map(({ id, pathname, component: Element }) => (
             <Route key={id} path={pathname} element={<Element />} />
           ))}
-          <Route path="*" element={<h1>404 not found</h1>} />
+          <Route path="/" element={<Buyurtmalar />} />
+          <Route path="*" element={<h2>Adashdin</h2> } />
         </Routes>
       </BrowserRouter>
     </Container>

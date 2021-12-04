@@ -1,18 +1,15 @@
 import React, { useState } from "react";
 import { list } from "../../mock/mahsulotlar.js";
 
-import {
-  Container,
-  Wrapper,
-  Info,
-  Navbar,
-
-} from "./style";
+import { Container, Wrapper, Info, Navbar, Drawer } from "./style";
 
 export const Mahsulotlar = (props) => {
-  const [products, ] = useState(Object.entries(list));
+  const [products, setProducts] = useState(list);
+  const Delete = (id) => {
+    const Newdata = products.filter((value) => value.id !== id);
+    setProducts(Newdata);
+  };
 
-  console.log(Object.entries(list));
   return (
     <Container>
       <Navbar>
@@ -29,23 +26,26 @@ export const Mahsulotlar = (props) => {
         <Navbar.Links>QO'SHIMCHA</Navbar.Links>
         <Navbar.Links>ACTION</Navbar.Links>
       </Navbar.Link>
+      <Drawer />
       <Wrapper>
-        {products.map(([key, value], index) =>
-         
-              <Wrapper.Column>
-                <Info>
-                  <image><img src={value.img} alt="" /></image>
-                    <h3>{value.mahsulot}</h3>
-                    <h3>{value.kategoriya}</h3>
-                    <h3>{value.price}</h3>
-                    <h3>{value.format}</h3>
-                    <action onClick={(id)=>!value.id===id}>{value.action}</action>
-                    <delete>{value.birnima}</delete>
-                </Info>
-              </Wrapper.Column>
-            )
-        }
+        {products.map((value, index) => (
+          <Wrapper.Column key={value.id}>
+            <Info>
+              <image>
+                <img src={value.img} alt="" />
+              </image>
+              <h3>{value.mahsulot}</h3>
+              <h3>{value.kategoriya}</h3>
+              <h3>{value.price}</h3>
+              <h3>{value.format}</h3>
+              <action>{value.action}</action>
+              <delete onClick={() => Delete(value.id)}>{value.birnima}</delete>
+              {/* <h1>{value.mahsulot}</h1> */}
+            </Info>
+          </Wrapper.Column>
+        ))}
       </Wrapper>
+      <button onClick={() => setProducts(list)}>Reset</button>
     </Container>
   );
 };

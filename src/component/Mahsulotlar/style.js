@@ -8,6 +8,16 @@ export const Container = styled.div`
   /* padding: 20px 30px; */
 `;
 
+export const Drawer = styled.div`
+position: absolute;
+top:0;
+right:0;
+z-index: -111;
+background: red;
+height: 100vh;
+width:300px
+
+`;
 export const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
