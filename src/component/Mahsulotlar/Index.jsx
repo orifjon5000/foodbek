@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { list } from "../../mock/mahsulotlar.js";
 
-import { Container, Wrapper, Info, Navbar, Drawer } from "./style";
+import { Container, Wrapper, Info, Navbar } from "./style";
 
 export const Mahsulotlar = (props) => {
   const [products, setProducts] = useState(list);
@@ -9,7 +9,7 @@ export const Mahsulotlar = (props) => {
     const Newdata = products.filter((value) => value.id !== id);
     setProducts(Newdata);
   };
-
+  
   return (
     <Container>
       <Navbar>
@@ -26,7 +26,6 @@ export const Mahsulotlar = (props) => {
         <Navbar.Links>QO'SHIMCHA</Navbar.Links>
         <Navbar.Links>ACTION</Navbar.Links>
       </Navbar.Link>
-      <Drawer />
       <Wrapper>
         {products.map((value, index) => (
           <Wrapper.Column key={value.id}>
@@ -44,8 +43,8 @@ export const Mahsulotlar = (props) => {
             </Info>
           </Wrapper.Column>
         ))}
+        <button onClick={() => setProducts(list)}>Reset</button>
       </Wrapper>
-      <button onClick={() => setProducts(list)}>Reset</button>
     </Container>
   );
 };

@@ -2,11 +2,13 @@ import styled from "styled-components";
 
 export const Container = styled.div`
   display: flex;
-  width: 100%;
+  /* width: 100%; */
   flex-direction: column;
   background: #e5e5e5;
-  /* padding: 20px 30px; */
+  padding: 20px 30px;
 `;
+
+
 
 export const Wrapper = styled.div`
   display: flex;
@@ -156,6 +158,8 @@ export const Navbar = styled.div`
   height: 100px;
   background: white;
 `;
+Navbar.Item=styled.div``;
+
 
 Navbar.Container = styled.div`
   display: flex;

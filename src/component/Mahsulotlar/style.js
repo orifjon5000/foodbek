@@ -5,19 +5,10 @@ export const Container = styled.div`
   width: 100%;
   flex-direction: column;
   background: #e5e5e5;
-  /* padding: 20px 30px; */
+  /* padding: 20px 30px;   */
+  
 `;
 
-export const Drawer = styled.div`
-position: absolute;
-top:0;
-right:0;
-z-index: -111;
-background: red;
-height: 100vh;
-width:300px
-
-`;
 export const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
@@ -212,7 +203,6 @@ export const Navbar = styled.div`
   height: 100px;
   background: white;
 `;
-
 Navbar.Container = styled.div`
   display: flex;
   align-items: center;
@@ -225,12 +215,13 @@ Navbar.Container = styled.div`
 
 Navbar.Plus = styled.div`
   background: green;
+  
 `;
 
 Navbar.Link = styled.div`
   display: flex;
   /* align-items: center; */
-  width: 100%;
+  /* width: 100%; */
   margin-top: 20px;
   margin-bottom: 20px;
   height: 36px;
