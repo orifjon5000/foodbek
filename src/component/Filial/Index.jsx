@@ -1,14 +1,15 @@
 import React, { useState } from "react";
-import { list } from "../../mock/mahsulotlar.js";
+import { card } from "../../mock/card";
 import Drawer from "../Drawer/Index";
 import { Container, Wrapper, Info, Navbar } from "./style";
 
 export const Mahsulotlar = () => {
-  const [products] = useState(Object.entries(list));
+  const [products] = useState(Object.entries(card));
   const [open, setOpen] = useState(false);
   const onClose = () => {
     setOpen(false);
   };
+  console.log(card);
 
   return (
     <Container open={open}>
@@ -20,17 +21,16 @@ export const Mahsulotlar = () => {
             <input type="text" id="text" placeholder="uz" />
             <label htmlFor="text">Kategoriya nomi ru</label>
             <input type="text" id="text" placeholder="ru" />
-
           </form>
-<h4>Bosh Kategoriya Kirtitish</h4>
+          <h4>Bosh Kategoriya Kirtitish</h4>
           <select name="drinks" id="davlat" size="1">
-                <option value="Uzbekistan">Dena</option>
-                <option value="Turkey">yuppi</option>
-                <option value="Egypt">gazvoda</option>
-                <option value="South Korea">shirinchoy</option>
-            </select>
+            <option value="Uzbekistan">Dena</option>
+            <option value="Turkey">yuppi</option>
+            <option value="Egypt">gazvoda</option>
+            <option value="South Korea">shirinchoy</option>
+          </select>
 
-            <button>Saqlash</button>
+          <button>Saqlash</button>
         </Drawer>
         <Navbar.Item onClick={() => setOpen(!open)}>
           {open ? "close" : "open"}
@@ -51,12 +51,21 @@ export const Mahsulotlar = () => {
       <Wrapper>
         {products.map(([key, value], index) => (
           <all>
-            <Info>
-              <h4>{value.price}</h4>
-              <h4>{value.action}</h4>
-              <h4>{value.birnima}</h4>
-              <h4>{value.format}</h4>
-            </Info>
+            {value.map((obj) => (
+              <Info>
+                {/* <h4>{value.filial.location}</h4> */}
+                <h4>{obj.filial.location}</h4>
+                <h4>{obj.filial.location}</h4>
+                <h4>{obj.filial.title}</h4>
+                <h4>09:00 - 20:00</h4>
+                <h4>
+                  {" "}
+                  <i class="fas fa-map-marker-alt"></i>
+                  <i class="fas fa-pen"></i>
+                  <i class="fas fa-trash-alt"></i>
+                </h4>
+              </Info>
+            ))}
           </all>
         ))}
       </Wrapper>

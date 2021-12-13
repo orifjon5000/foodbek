@@ -2,82 +2,39 @@ import styled from "styled-components";
 
 export const Container = styled.div`
   display: flex;
-  width: 100%;
+  /* width: 100%; */
   flex-direction: column;
   background: #e5e5e5;
-  /* padding: 20px 30px;   */
-  
+  /* padding: 20px 30px; */
+  /* opacity: ${({ open }) => (open ? "0.3" : "1")}; */
 `;
 
 export const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
-  border-radius: 8px;
   flex: 1;
-  box-shadow: 0px 2px 2px rgba(174, 176, 181, 0.314986);
-  border-radius: 6px;
-  /* width: 992px; */
-  /* height: 60px; */
 `;
-Wrapper.Column = styled.div``;
+Wrapper.column = styled.div`
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  height: 100vh;
+`;
 
 export const Info = styled.div`
   display: flex;
   flex: 1;
-  align-items: center;
-  justify-content: flex-start;
-  margin: 7px 20px;
+  justify-content: space-around;
+  margin: 20px;
   background: white;
   box-shadow: 0px 20px 25px rgba(176, 177, 181, 0.432802);
   border-radius: 6px;
   height: fit-content;
-  /* width: 60rem; */
-  img {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    margin: 10px 30px 10px 20px;
+  width: 60rem;
+  h4 {
+    width: 14%;
   }
-  h3 {
-    width: 65px;
-    display: flex;
-    flex: 1;
-    font-size: 13px;
-    line-height: 15px;
-    font-weight: 500;
-    text-transform: capitalize;
-    color: #2d3a45;
-  }
-  action  {
-    border: 3px solid #edeff3;
-    display: flex;
-    justify-content: center;
-    align-items: center ;
-    border-radius: 50%;
-    width: 32px;
-    height: 32px;
-    padding: 10px;
-    opacity: 0.8;
-    cursor: pointer;
-    
-  }
-  delete  {
-    border: 3px solid #edeff3;
-    display: flex;
-    justify-content: center;
-    align-items: center ;
-    border-radius: 50%;
-    width: 32px;
-    height: 32px;
-    padding: 10px;
-    opacity: 0.8;
-    cursor: pointer;
-    margin-right: 85px;
-    margin-left: 25px;
-  }
-
 `;
-
 
 export const Order = styled.div`
   display: flex;
@@ -199,10 +156,12 @@ export const Navbar = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 20px 30px;
+  /* padding: 20px 30px;   */
   height: 100px;
   background: white;
 `;
+Navbar.Item = styled.div``;
+
 Navbar.Container = styled.div`
   display: flex;
   align-items: center;
@@ -215,17 +174,21 @@ Navbar.Container = styled.div`
 
 Navbar.Plus = styled.div`
   background: green;
-  
 `;
 
 Navbar.Link = styled.div`
   display: flex;
   /* align-items: center; */
+  justify-content: space-around;
   /* width: 100%; */
   margin-top: 20px;
   margin-bottom: 20px;
   height: 36px;
   background: white;
+  li {
+    list-style:none;
+    width: 14%;
+  }
 `;
 Navbar.Links = styled.div`
   align-items: center;

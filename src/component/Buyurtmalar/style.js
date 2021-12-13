@@ -213,9 +213,9 @@ Menu.H = styled.div`
   margin-right: 5px;
   width: 40px;
   background: ${({ isactive }) => isactive && "white"};
-  fill: #8d9ba8;
-  path & {
-    fill:  ${({ isactive }) => isactive && "#8d9ba8"};
+  fill:  ${({ isactive }) => isactive && "#8d9ba8"};
+  & path {
+    fill: red;
   }
   border-radius: 50%;
   cursor: pointer;

@@ -10,6 +10,7 @@ export const Drawer = styled.div`
   height: 100vh;
   width: 300px;
   cursor: pointer;
+
 `;
 export const Close = styled.div`
 display: flex;

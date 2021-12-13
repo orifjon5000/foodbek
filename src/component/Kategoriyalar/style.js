@@ -5,7 +5,9 @@ export const Container = styled.div`
   /* width: 100%; */
   flex-direction: column;
   background: #e5e5e5;
-  padding: 20px 30px;
+  /* padding: 20px 30px; */
+  /* opacity: ${({ open }) => (open ? "0.3" : "1")}; */
+
 `;
 
 
@@ -25,13 +27,14 @@ Wrapper.column = styled.div`
 export const Info = styled.div`
   display: flex;
   flex: 1;
-  justify-content: flex-start;
+ 
   margin: 20px;
   background: white;
   box-shadow: 0px 20px 25px rgba(176, 177, 181, 0.432802);
   border-radius: 6px;
   height: fit-content;
   width: 60rem;
+ 
 `;
 
 export const Order = styled.div`
@@ -154,7 +157,7 @@ export const Navbar = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 20px 30px;
+  /* padding: 20px 30px;   */
   height: 100px;
   background: white;
 `;
@@ -177,6 +180,27 @@ Navbar.Plus = styled.div`
 
 Navbar.Link = styled.div`
   display: flex;
+  /* align-items: center; */
+  /* width: 100%; */
+  margin-top: 20px;
+  margin-bottom: 20px;
+  height: 36px;
+  background: white;
+  li{
+    text-transform:none;
+  }
+`;
+Navbar.Links = styled.div`
+  align-items: center;
+  display: flex;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 13px;
+  text-transform: uppercase;
+  flex: 1;
+  padding-left: 20px;
+  border-left: 2px solid rgba(0, 0, 0, 0.2);
+  color: #2d3a45;
 `;
 
 Navbar.Input = styled.div``;
