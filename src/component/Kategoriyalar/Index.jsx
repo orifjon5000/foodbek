@@ -20,17 +20,16 @@ export const Mahsulotlar = () => {
             <input type="text" id="text" placeholder="uz" />
             <label htmlFor="text">Kategoriya nomi ru</label>
             <input type="text" id="text" placeholder="ru" />
-
           </form>
-<h4>Bosh Kategoriya Kirtitish</h4>
+          <h4>Bosh Kategoriya Kirtitish</h4>
           <select name="drinks" id="davlat" size="1">
-                <option value="Uzbekistan">Dena</option>
-                <option value="Turkey">yuppi</option>
-                <option value="Egypt">gazvoda</option>
-                <option value="South Korea">shirinchoy</option>
-            </select>
+            <option value="Uzbekistan">Dena</option>
+            <option value="Turkey">yuppi</option>
+            <option value="Egypt">gazvoda</option>
+            <option value="South Korea">shirinchoy</option>
+          </select>
 
-            <button>Saqlash</button>
+          <button>Saqlash</button>
         </Drawer>
         <Navbar.Item onClick={() => setOpen(!open)}>
           {open ? "close" : "open"}
@@ -50,14 +49,12 @@ export const Mahsulotlar = () => {
       </Navbar.Link>
       <Wrapper>
         {products.map(([key, value], index) => (
-          <all>
             <Info>
               <h4>{value.price}</h4>
               <h4>{value.action}</h4>
               <h4>{value.birnima}</h4>
               <h4>{value.format}</h4>
             </Info>
-          </all>
         ))}
       </Wrapper>
     </Container>

@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const Container = styled.div`
   display: flex;
-  /* width: 100%; */
+  width: 100%;
   flex-direction: column;
   background: #e5e5e5;
   /* padding: 20px 30px; */
@@ -25,16 +25,18 @@ Wrapper.column = styled.div`
 `;
 
 export const Info = styled.div`
+  width: 100%;
+  /* height: 60px; */
   display: flex;
-  flex: 1;
- 
+
+  flex: 2;
   margin: 20px;
+  margin-right: -60px;
   background: white;
   box-shadow: 0px 20px 25px rgba(176, 177, 181, 0.432802);
   border-radius: 6px;
   height: fit-content;
-  width: 60rem;
- 
+ {}
 `;
 
 export const Order = styled.div`
@@ -155,7 +157,7 @@ export const Save = styled.div`
 
 export const Navbar = styled.div`
   display: flex;
-  justify-content: center;
+  justify-content: start;
   align-items: center;
   /* padding: 20px 30px;   */
   height: 100px;
