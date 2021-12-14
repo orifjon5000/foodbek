@@ -3,7 +3,7 @@ import { card } from "../../mock/card";
 import Drawer from "../Drawer/Index";
 import { Container, Wrapper, Info, Navbar } from "./style";
 
-export const Mahsulotlar = () => {
+export const Filial = () => {
   const [products] = useState(Object.entries(card));
   const [open, setOpen] = useState(false);
   const onClose = () => {
@@ -73,4 +73,4 @@ export const Mahsulotlar = () => {
   );
 };
 
-export default Mahsulotlar;
+export default Filial;
