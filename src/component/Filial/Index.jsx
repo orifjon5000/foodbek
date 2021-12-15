@@ -1,7 +1,15 @@
 import React, { useState } from "react";
 import { card } from "../../mock/card";
 import Drawer from "../Drawer/Index";
+import {
+  GoogleMap,
+  Marker,
+  useJsApiLoader,
+  useLoadScript,
+} from "@react-google-maps/api";
 import { Container, Wrapper, Info, Navbar } from "./style";
+
+const key = "AIzaSyBOTobVJK_w18yvP0_EOFM_e4DTpseCowU";
 
 export const Filial = () => {
   const [products] = useState(Object.entries(card));
@@ -10,7 +18,10 @@ export const Filial = () => {
     setOpen(false);
   };
   console.log(card);
-
+  const { isLoaded } = useJsApiLoader({
+    googleMapsApiKey: key,
+    id:"main"
+  });
   return (
     <Container open={open}>
       <Navbar>
@@ -29,6 +40,22 @@ export const Filial = () => {
             <option value="Egypt">gazvoda</option>
             <option value="South Korea">shirinchoy</option>
           </select>
+
+          <div>
+            {isLoaded &&
+            <GoogleMap
+              id="main"
+              mapContainerStyle={{
+                width: "400px",
+                height: "400px",
+              }}
+              center={{
+                lat: 41.311081,
+                lng: 69.240562,
+              }}
+              zoom={10}
+            />}
+          </div>
 
           <button>Saqlash</button>
         </Drawer>
