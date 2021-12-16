@@ -174,6 +174,14 @@ Navbar.Container = styled.div`
 
 Navbar.Plus = styled.div`
   background: green;
+  border-radius: 50%;
+  padding: 5px;
+  width: 30px;
+  display: flex;
+  justify-content: center;
+  color: white;
+  align-items: center;
+  cursor:pointer
 `;
 
 Navbar.Link = styled.div`

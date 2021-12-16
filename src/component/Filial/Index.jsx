@@ -60,9 +60,8 @@ export const Filial = () => {
           <button>Saqlash</button>
         </Drawer>
         <Navbar.Item onClick={() => setOpen(!open)}>
-          {open ? "close" : "open"}
-        </Navbar.Item>
         <Navbar.Plus>+</Navbar.Plus>
+        </Navbar.Item>
         <Navbar.Input>
           <input type="text" />
         </Navbar.Input>
