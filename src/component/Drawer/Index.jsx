@@ -9,3 +9,4 @@ export const Index = ({ children, open, onClos }) => {
     </Drawer>
   );
 };
+export default Index;

@@ -2,6 +2,8 @@ import React, { useState } from "react";
 // import { card } from "../../mock/card";
 
 import menuV from "../../assets/icons/menuV.svg";
+import {ReactComponent as First} from "../../assets/icons/menuH.svg"
+import {ReactComponent as Second} from "../../assets/icons/menuV.svg"
 import menuH from "../../assets/icons/menuH.svg";
 import { Container,  Navbar, Menu } from "./style";
 
@@ -43,10 +45,10 @@ export const Buyurtmalar = () => {
         </Navbar.Container>
         <Menu>
           <Menu.V onClick={() => setGrid(false)} isactive={!isGrid}>
-            <img isactive={!isGrid} src={menuH} alt="v" />
+            <First isactive={!isGrid} className="Image" />
           </Menu.V>
-          <Menu.H onClick={() => setGrid(true)} isactive={isGrid}>
-            <img isactive={isGrid} src={menuV} alt="v" />
+          <Menu.H onClick={() =>  setGrid(true)} className="Images" isactive={isGrid}>
+            <Second isactive={!isGrid} className="Images" />
           </Menu.H>
         </Menu>
       </Navbar>

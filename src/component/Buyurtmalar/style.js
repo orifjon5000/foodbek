@@ -195,10 +195,10 @@ Menu.V = styled.div`
   margin-left: 3px;
   margin-right: 5px;
   width: 40px;
-  background: ${({ isactive }) => isactive && "white"};
   border-radius: 50%;
   cursor: pointer;
-  img {
+  background: ${({ isactive }) => isactive && "white"};
+  .Image {
     fill: ${({ isactive }) => isactive && "#8d9ba8"}
   }
 `;
@@ -213,9 +213,8 @@ Menu.H = styled.div`
   margin-right: 5px;
   width: 40px;
   background: ${({ isactive }) => isactive && "white"};
-  fill:  ${({ isactive }) => isactive && "#8d9ba8"};
-  & path {
-    fill: red;
+  .Images  {
+    fill: ${({ isactive }) => isactive && "#8d9ba8"}
   }
   border-radius: 50%;
   cursor: pointer;

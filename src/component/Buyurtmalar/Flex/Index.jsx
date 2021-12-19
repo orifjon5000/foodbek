@@ -1,5 +1,5 @@
-import React from "react";
-import { card } from "../../../mock/card";
+import React,{useState} from "react";
+import { card as data } from "../../../mock/card";
 import save from "../../../assets/icons/save.svg";
 import done from "../../../assets/icons/done.svg";
 import cancel from "../../../assets/icons/cancel.svg";
@@ -18,6 +18,14 @@ import {
 } from "./style";
 
 export const Flex = (props) => {
+const [card, setCard] = useState(data)
+  const onDelete = (value) => {
+    const newData = Object.entries(card).map(([name, data]) => {
+      data.filter((item) => item.id === value.id && item.categoria === value.categoria)
+      
+    })
+    setCard(newData)
+  }
   let name = "yangi";
   console.log(card[name]);
   return (
@@ -59,7 +67,7 @@ export const Flex = (props) => {
                       {" "}
                       <span>operator:</span> {value.operator.name}
                     </p>{" "}
-                    <button>
+                    <button >
                       <img src={cancel} alt="" />{" "}
                     </button>
                   </div>
