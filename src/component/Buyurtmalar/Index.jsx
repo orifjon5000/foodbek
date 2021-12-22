@@ -1,11 +1,9 @@
 import React, { useState } from "react";
 // import { card } from "../../mock/card";
 
-import menuV from "../../assets/icons/menuV.svg";
 import {ReactComponent as First} from "../../assets/icons/menuH.svg"
 import {ReactComponent as Second} from "../../assets/icons/menuV.svg"
-import menuH from "../../assets/icons/menuH.svg";
-import { Container,  Navbar, Menu } from "./style";
+import { Container,  Navbar,AddPlus, Menu } from "./style";
 
 import Flex from "./Flex/Index";
 import Grid from "./Grid/Index";
@@ -16,7 +14,12 @@ export const Buyurtmalar = () => {
   const onChange= (title)=>{isGrid && setisActiVe(title)}
   return (
     <Container>
+     
       <Navbar>
+        <AddPlus>
+          <span>+</span>
+          <p>Yangi buyurtma <br/>qo'shish</p>
+        </AddPlus>
         <Navbar.Container isActive={isGrid}>
           <Navbar.Item
             onClick={() => onChange("Yangi")}

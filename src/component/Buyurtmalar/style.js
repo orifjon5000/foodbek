@@ -5,7 +5,7 @@ export const Container = styled.div`
   width: 100%;
   flex-direction: column;
   background: #e5e5e5;
-  padding: 20px 30px;
+  /* padding: 20px 30px; */
 `;
 
 export const Wrapper = styled.div`
@@ -147,13 +147,24 @@ export const Navbar = styled.div`
   padding: 20px 30px;
   height: 100px;
   background: white;
+  width: 100%;
+  margin-top: 24px;
 `;
+export const AddPlus = styled.div`
+display:flex;
+align-items: center;
+justify-content: center;
+border: 1px solid black;
+width:205px;
+margin-right: 52px;
+margin-left: 38px;;
+`
 
 Navbar.Container = styled.div`
   display: flex;
   align-items: center;
   background: rgba(237, 239, 243, 1);
-  width: 700px;
+  /* width: 700px; */
   height: 45px;
   border-radius: 22px;
   margin-right: 80px;

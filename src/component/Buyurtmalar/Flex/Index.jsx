@@ -19,13 +19,7 @@ import {
 
 export const Flex = (props) => {
 const [card, setCard] = useState(data)
-  const onDelete = (value) => {
-    const newData = Object.entries(card).map(([name, data]) => {
-      data.filter((item) => item.id === value.id && item.categoria === value.categoria)
-      
-    })
-    setCard(newData)
-  }
+  
   let name = "yangi";
   console.log(card[name]);
   return (
