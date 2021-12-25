@@ -47,25 +47,20 @@ export const LogoTitle = styled.div`
   flex-direction: column;
   
   /* width: 100%; */
-  h2 {
+  .p1 {
     /* position: absolute; */
     width: 74px;
     height: 19px;
     /* left: 114px; */
     /* top: 45px; */
     font-size: 16px;
-    line-height: 19px;
-    /* identical to box height */
-
+    opacity: 1;
     color: #2d3a45;
   }
   p {
     width: 100%;
     height: 14px;
-    left: 98px;
-    top: 80px;
     font-size: 12px;
-    /* identical to box height */
     text-align: center;
     color: #2d3a45;
     opacity: 0.5;

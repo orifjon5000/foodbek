@@ -11,7 +11,7 @@ export const Sidebar = () => {
       <Wrapper>
         <img src={logo} alt="ss" />
         <LogoTitle>
-          <h2>Fast Food</h2>
+          <p className="p1">Fast Food</p>
           <p>Online Mahsulot Sotuvi</p>
         </LogoTitle>
       </Wrapper>
