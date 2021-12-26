@@ -148,19 +148,20 @@ export const Navbar = styled.div`
   height: 100px;
   background: white;
   width: 100%;
-  margin-top: 24px;
+  /* margin-top: 24px; */
 `;
 export const AddPlus = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  border-right: 1px solid #edeff3;
-  width: 205px;
+  border-right: 2px solid #edeff3;
+  width: 245px;
   /* height:100%; */
-  padding-right: 52px;
-  padding-left: 38px;
+  /* padding-right: 52px; */
+  /* padding-left: 38px; */
   span {
-    width: 50px;
+    margin-right: 15px;
+    width: 40px;
     height: 36px;
     color:#fff;
     text-align: center;
