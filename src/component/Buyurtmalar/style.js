@@ -155,17 +155,14 @@ export const AddPlus = styled.div`
   align-items: center;
   justify-content: center;
   border-right: 2px solid #edeff3;
-  width: 245px;
-  /* height:100%; */
-  /* padding-right: 52px; */
-  /* padding-left: 38px; */
+  width: 225px;
   span {
     margin-right: 15px;
-    width: 40px;
-    height: 36px;
+    width: 36px;
+    height: 30px;
     color:#fff;
     text-align: center;
-    line-height:2;
+    line-height:1.6;
     border-radius: 50%;
     background: rgba(32, 212, 114, 1);
   }

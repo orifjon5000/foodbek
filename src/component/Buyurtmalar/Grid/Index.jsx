@@ -33,13 +33,13 @@ export const Mahsulotlar = ({isActive}) => {
             .map((item) => (
               <all>
                 <Info>
-                  <Order>
+                  <Order className="box">
                     <p>
                       <span>{item.orderId}</span>
                       <img src={save} alt="dsave" />
                     </p>
                     <pi>
-                      <img src={clock} alt="clock" /> 00:24
+                      <img className="clock" src={clock} alt="clock" /> 00:24
                     </pi>
                   </Order>
                   <User>
