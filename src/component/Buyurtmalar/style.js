@@ -142,36 +142,47 @@ export const Save = styled.div`
 `;
 export const Navbar = styled.div`
   display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 20px 30px;
+  /* justify-content: center; */
+  /* align-items: center; */
+  /* padding: 20px 30px; */
   height: 100px;
   background: white;
   width: 100%;
   margin-top: 24px;
 `;
 export const AddPlus = styled.div`
-display:flex;
-align-items: center;
-justify-content: center;
-border-right: 1px solid  #EDEFF3;
-width:205px;
-/* height:100%; */
-padding-right: 52px;
-padding-left: 38px;;
-`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-right: 1px solid #edeff3;
+  width: 205px;
+  /* height:100%; */
+  padding-right: 52px;
+  padding-left: 38px;
+  span {
+    width: 50px;
+    height: 36px;
+    color:#fff;
+    text-align: center;
+    line-height:2;
+    border-radius: 50%;
+    background: rgba(32, 212, 114, 1);
+  }
+`;
 
 Navbar.Container = styled.div`
   display: flex;
+  justify-content: center;
   align-items: center;
   background: rgba(237, 239, 243, 1);
-  /* width: 700px; */
   height: 45px;
   border-radius: 22px;
   margin-right: 80px;
-  padding: 20px 10px; ;
-  opacity: ${({isActive})=> isActive ? 1 : .3};
-  cursor: ${({isActive})=> isActive? 'pointer':'not-allowed'}   
+  margin-left: 50px;
+  margin-top: 30px;
+  padding: 20px 10px;
+  opacity: ${({ isActive }) => (isActive ? 1 : 0.3)};
+  cursor: ${({ isActive }) => (isActive ? "pointer" : "not-allowed")};
 `;
 
 Navbar.Item = styled.div`
@@ -180,6 +191,7 @@ Navbar.Item = styled.div`
   align-items: center;
   height: 36px;
   width: 162px;
+  margin-left: 20px;
   margin-right: 20px;
   background: ${({ isActive }) => isActive && "white"};
   box-shadow: ${({ isActive }) => isActive && "rgba(174, 176, 181, 0.314986)"};
@@ -190,6 +202,7 @@ Navbar.Item = styled.div`
 
 export const Menu = styled.div`
   display: flex;
+  margin-top: 30px;
   align-items: center;
   justify-content: center;
   width: 70px;
@@ -211,7 +224,7 @@ Menu.V = styled.div`
   cursor: pointer;
   background: ${({ isactive }) => isactive && "white"};
   .Image {
-    fill: ${({ isactive }) => isactive && "#8d9ba8"}
+    fill: ${({ isactive }) => isactive && "#8d9ba8"};
   }
 `;
 Menu.H = styled.div`
@@ -225,8 +238,8 @@ Menu.H = styled.div`
   margin-right: 5px;
   width: 40px;
   background: ${({ isactive }) => isactive && "white"};
-  .Images  {
-    fill: ${({ isactive }) => isactive && "#8d9ba8"}
+  .Images {
+    fill: ${({ isactive }) => isactive && "#8d9ba8"};
   }
   border-radius: 50%;
   cursor: pointer;
