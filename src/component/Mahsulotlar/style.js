@@ -214,7 +214,14 @@ Navbar.Container = styled.div`
 `;
 
 Navbar.Plus = styled.div`
-  background: green;
+  background: rgba(32, 212, 114, 1);
+  width: 36px;
+height: 36px;
+background: #20D472;
+border-radius: 18px;
+color:#fff;
+text-align: center;
+line-height:2;
   
 `;
 
