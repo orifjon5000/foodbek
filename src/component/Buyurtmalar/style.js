@@ -154,10 +154,11 @@ export const AddPlus = styled.div`
 display:flex;
 align-items: center;
 justify-content: center;
-border: 1px solid black;
+border-right: 1px solid  #EDEFF3;
 width:205px;
-margin-right: 52px;
-margin-left: 38px;;
+/* height:100%; */
+padding-right: 52px;
+padding-left: 38px;;
 `
 
 Navbar.Container = styled.div`
