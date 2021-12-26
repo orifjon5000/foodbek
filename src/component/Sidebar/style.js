@@ -32,7 +32,6 @@ export const Title = styled.div`
 
 export const Wrapper = styled.div`
   display: flex;
-  /* margin-top: 28px 72px 64px 24px; */
   align-items: center;
   margin-top: 28px;
   margin-bottom: 64px;
@@ -46,13 +45,9 @@ export const LogoTitle = styled.div`
   display: flex;
   flex-direction: column;
   
-  /* width: 100%; */
   .p1 {
-    /* position: absolute; */
     width: 74px;
     height: 19px;
-    /* left: 114px; */
-    /* top: 45px; */
     font-size: 16px;
     opacity: 1;
     color: #2d3a45;
