@@ -6,7 +6,6 @@ export const Container = styled.div`
   flex-direction: column;
   background: #e5e5e5;
   /* padding: 20px 30px;   */
-  
 `;
 
 export const Wrapper = styled.div`
@@ -48,24 +47,23 @@ export const Info = styled.div`
     text-transform: capitalize;
     color: #2d3a45;
   }
-  action  {
+  action {
     border: 3px solid #edeff3;
     display: flex;
     justify-content: center;
-    align-items: center ;
+    align-items: center;
     border-radius: 50%;
     width: 32px;
     height: 32px;
     padding: 10px;
     opacity: 0.8;
     cursor: pointer;
-    
   }
-  delete  {
+  delete {
     border: 3px solid #edeff3;
     display: flex;
     justify-content: center;
-    align-items: center ;
+    align-items: center;
     border-radius: 50%;
     width: 32px;
     height: 32px;
@@ -75,9 +73,7 @@ export const Info = styled.div`
     margin-right: 85px;
     margin-left: 25px;
   }
-
 `;
-
 
 export const Order = styled.div`
   display: flex;
@@ -197,7 +193,7 @@ export const Save = styled.div`
 
 export const Navbar = styled.div`
   display: flex;
-  justify-content: center;
+  justify-content: start;
   align-items: center;
   padding: 20px 30px;
   height: 100px;
@@ -216,13 +212,15 @@ Navbar.Container = styled.div`
 Navbar.Plus = styled.div`
   background: rgba(32, 212, 114, 1);
   width: 36px;
-height: 36px;
-background: #20D472;
-border-radius: 18px;
-color:#fff;
-text-align: center;
-line-height:2;
-  
+  height: 36px;
+  background: #20d472;
+  border-radius: 18px;
+  color: #fff;
+  text-align: center;
+  margin: 40px 0;
+  margin-left: 20px;
+  margin-right: 20px;
+  line-height: 2;
 `;
 
 Navbar.Link = styled.div`
@@ -247,7 +245,18 @@ Navbar.Links = styled.div`
   color: #2d3a45;
 `;
 
-Navbar.Input = styled.div``;
+Navbar.Input = styled.div`
+ input{
+  margin-left: 15px;
+  outline: none;
+  border: none;
+  background: rgba(237, 239, 243, 1);
+  border-radius: 24px;
+  width: 300px;
+  height: 48px;
+  padding:12px;
+ }
+`;
 Navbar.Tools = styled.div``;
 export const Menu = styled.div`
   display: flex;

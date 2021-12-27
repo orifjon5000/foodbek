@@ -14,6 +14,8 @@ export const Mahsulotlar = (props) => {
     <Container>
       <Navbar>
         <Navbar.Plus>+</Navbar.Plus>
+        <p>yangi mahsulot 
+          <br/>qo'shish</p>
         <Navbar.Input>
           <input type="text" />
         </Navbar.Input>
