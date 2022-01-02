@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { list } from "../../mock/mahsulotlar.js";
+import { AddPlus } from "../Buyurtmalar/style.js";
 
 import { Container, Wrapper, Info, Navbar } from "./style";
 
@@ -13,13 +14,15 @@ export const Mahsulotlar = (props) => {
   return (
     <Container>
       <Navbar>
-        <Navbar.Plus>+</Navbar.Plus>
-        <p>yangi mahsulot 
-          <br/>qo'shish</p>
+      
+           <AddPlus>
+          <span>+</span>
+          <p>Yangi buyurtma <br/>qo'shish</p>
+        </AddPlus>
         <Navbar.Input>
           <input type="text" />
+          <i class="fas fa-search"></i>
         </Navbar.Input>
-        <Navbar.Tools>icon</Navbar.Tools>
       </Navbar>
       <Navbar.Link>
         <Navbar.Links>MAXSULOTLAR</Navbar.Links>

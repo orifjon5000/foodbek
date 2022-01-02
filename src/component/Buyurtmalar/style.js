@@ -147,7 +147,7 @@ export const Navbar = styled.div`
   /* padding: 20px 30px; */
   height: 100px;
   background: white;
-  width: 100%;
+  /* width: 100%; */
   /* margin-top: 24px; */
 `;
 export const AddPlus = styled.div`
@@ -155,7 +155,7 @@ export const AddPlus = styled.div`
   align-items: center;
   justify-content: center;
   border-right: 2px solid #edeff3;
-  width: 225px;
+  width: 20%;
   span {
     margin-right: 15px;
     width: 36px;
@@ -208,7 +208,7 @@ export const Menu = styled.div`
   background: #edeff3;
   border-radius: 24px;
   margin-left: 20px;
-`;
+  `;
 
 Menu.V = styled.div`
   display: flex;

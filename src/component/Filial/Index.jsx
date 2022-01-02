@@ -8,7 +8,6 @@ import {
   useLoadScript,
 } from "@react-google-maps/api";
 import { Container, Wrapper, Info, Navbar } from "./style";
-
 const key = "AIzaSyBOTobVJK_w18yvP0_EOFM_e4DTpseCowU";
 
 export const Filial = () => {

@@ -209,19 +209,7 @@ Navbar.Container = styled.div`
   padding: 20px 10px; ;
 `;
 
-Navbar.Plus = styled.div`
-  background: rgba(32, 212, 114, 1);
-  width: 36px;
-  height: 36px;
-  background: #20d472;
-  border-radius: 18px;
-  color: #fff;
-  text-align: center;
-  margin: 40px 0;
-  margin-left: 20px;
-  margin-right: 20px;
-  line-height: 2;
-`;
+
 
 Navbar.Link = styled.div`
   display: flex;
@@ -246,7 +234,7 @@ Navbar.Links = styled.div`
 `;
 
 Navbar.Input = styled.div`
- input{
+ 
   margin-left: 15px;
   outline: none;
   border: none;
@@ -255,6 +243,11 @@ Navbar.Input = styled.div`
   width: 300px;
   height: 48px;
   padding:12px;
+ input{
+   outline: none;
+   background: transparent;
+   border: none;
+   padding-right: 50px;
  }
 `;
 Navbar.Tools = styled.div``;
